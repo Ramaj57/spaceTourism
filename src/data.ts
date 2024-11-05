@@ -1,3 +1,4 @@
+export const data = [
 {
   "destinations": [
     {
@@ -106,3 +107,4 @@
     }
   ]
 }
+]
