@@ -1,7 +1,7 @@
 
  <div class="destination-flex">
   <div class="nav-title">PICK YOUR DESTINATION</div>  
-  <img [src]="planets().image" alt="">
+  <img [src]="image" alt="">
   <div class="desktop-flex">  
   <nav>
     <a [routerLink]="['/destination','moon']" routerLinkActive="selected">MOON</a>
@@ -9,18 +9,19 @@
     <a [routerLink]="['/destination','europa']" routerLinkActive="selected">EUROPA</a>
     <a [routerLink]="['/destination','titan']" routerLinkActive="selected">TITAN</a>
   </nav>
-  <div class="name">{{ planets().name }}</div>
-  <div class="description">{{planets().description}}</div>
+  <div class="name">{{ name }}</div>
+  <div class="description">{{description}}</div>
   <div class="hline"></div>
   <div class="bottom-flex">
     <div class="distance">
       <div class="distance-label">AVG. DISTANCE</div>
-      <div class="distance-value">{{planets().distance}}</div>
+      <div class="distance-value">{{distance}}</div>
     </div>
     <div class="travel">
       <div class="travel-label">EST. TRAVEL TIME</div>
-      <div class="travel-value">{{planets().travel}}</div>
+      <div class="travel-value">{{travel}}</div>
     </div>
   </div>
 </div>
 </div>
+

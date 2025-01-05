@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, RouterLink } from '@angular/router';
+import { Component,computed,inject,input,OnInit,signal } from '@angular/core';
+import { ActivatedRoute, ActivatedRouteSnapshot, RouterLink} from '@angular/router';
+import { spacedata } from '../../data';
+import { DataService } from '../data.service';
+
+
 
 @Component({
   selector: 'app-destination',
@@ -8,21 +12,10 @@ import { ActivatedRoute, Params, RouterLink } from '@angular/router';
   templateUrl: './destination.component.html',
   styleUrl: './destination.component.css'
 })
-export class DestinationComponent implements OnInit {
-parentDataId!: number;
-childDataId!: number;
+export class DestinationComponent{   
+  planets = signal(spacedata[0].destinations[0]);
 
-constructor(private route: ActivatedRoute) {}
 
-ngOnInit(): void {
-  this.route.paramMap.subscribe((params:Params) => {
-    this.parentDataId = +params['parentDataId'];
-    this.childDataId = +params['childDataId'];    
-  });
-  throw new Error('Method not implemented.');
+  
 }
 
-
-
-
-}

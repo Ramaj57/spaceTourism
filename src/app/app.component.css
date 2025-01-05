@@ -1,4 +1,28 @@
-.background-image{
- background-image: url('/assets/home/background-home-desktop.jpg');
- background-size: cover;
+/* Mobile phone view*/
+ @media(min-width:320px){
+    .background-image{      
+    background-image: url('/assets/technology/background-technology-mobile.jpg');
+    background-size:cover;
+    height: 100vh;
+    max-width: 100%;
+    }
 }
+
+ /* Tablet view*/
+ @media(min-width:746px){
+    .background-image{      
+        background-image: url('/assets/technology/background-technology-mobile.jpg');
+        background-size:cover;
+        height: 100vh;
+        max-width: 100%;        
+        }
+ }
+ /* Desktop view*/
+ @media(min-width:1440px){
+    .background-image{      
+        background-image: url('/assets/technology/background-technology-mobile.jpg');
+        background-size:cover;
+        height: 100vh;
+        max-width: 100%;
+        }
+ }

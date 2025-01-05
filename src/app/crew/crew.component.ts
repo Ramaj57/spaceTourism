@@ -1,24 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, RouterLink } from '@angular/router';
+import { Component, signal} from '@angular/core';
+import { spacedata } from '../../data';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-crew',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterOutlet],
   templateUrl: './crew.component.html',
   styleUrl: './crew.component.css'
 })
-export class CrewComponent implements OnInit{
-  parentDataId!: number;
-  childDataId!: number;
+export class CrewComponent{
+  member = signal(spacedata[0].crew[0])
   
-  constructor(private route: ActivatedRoute) {}
-  
-  ngOnInit(): void {
-    this.route.paramMap.subscribe((params:Params) => {
-      this.parentDataId = +params['parentDataId'];
-      this.childDataId = +params['childDataId'];    
-    });
-    throw new Error('Method not implemented.');
-  }
 }

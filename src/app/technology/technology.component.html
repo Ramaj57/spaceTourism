@@ -1,1 +1,18 @@
-<p>technology works!</p>
+<div class="technology-flex">
+    <h2 class="nav-title">SPACE LAUNCH 101</h2>
+    <img [src]="equipment().image" alt="">
+    <div class="seperator">
+        <nav>
+           <button>1</button> 
+            <button>2</button>
+            <button>3</button>
+        </nav>
+        <div class="seperator-2">
+            <h3 class="terminology">THE TERMINOLOGY...</h3>
+            <h1 class="name">{{equipment().name}}</h1>
+            <p class="description">{{equipment().description}}</p>
+        </div>
+    </div>
+</div>
+
+<router-outlet/>

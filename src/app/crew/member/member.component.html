@@ -1,9 +1,9 @@
 <div class="crew-flex">
     <div class="left-side">
         <h2 class="nav-title">MEET YOUR CREW</h2>
-        <h3 class="role">{{member().role}}</h3>
-        <h1 class="name">{{member().name}}</h1>
-        <p class="bio">{{member().bio}}</p>
+        <h3 class="role">{{role}}</h3>
+        <h1 class="name">{{name}}</h1>
+        <p class="bio">{{bio}}</p>
         <nav>
             <a class="crew-browse" routerLink="douglas-hurley"></a>
             <a class="crew-browse" routerLink="douglas-hurley"></a>
@@ -12,8 +12,6 @@
         </nav>
     </div>
     <div class="right-side">
-        <img [src]="member().image" alt="">
+        <img [src]="image" alt="">
     </div>
 </div>
-
-<router-outlet/>

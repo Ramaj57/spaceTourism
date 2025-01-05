@@ -1,24 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { Component, signal } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { spacedata } from '../../data';
 
 @Component({
   selector: 'app-technology',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, RouterLinkActive,RouterOutlet],
   templateUrl: './technology.component.html',
   styleUrl: './technology.component.css'
 })
-export class TechnologyComponent implements OnInit{
-  parentDataId!: number;
-  childDataId!: number;
+export class TechnologyComponent {
+  equipment = signal(spacedata[0].technology[0])
   
-  constructor(private route: ActivatedRoute) {}
-  
-  ngOnInit(): void {
-    this.route.paramMap.subscribe((params:Params) => {
-      this.parentDataId = +params['parentDataId'];
-      this.childDataId = +params['childDataId'];    
-    });
-    throw new Error('Method not implemented.');
-  }
 }

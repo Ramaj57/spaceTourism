@@ -1,1 +1,24 @@
-<p>nav-bar works!</p>
+<nav class="nav-flex">
+    <img class="logo" src="assets/nav-bar/Logo.png" alt="MUAHAHAHA">
+    <div class="nav-hline"></div>
+    <div class="this">
+        <a routerLink="/home" routerLinkActive="selected">00 HOME</a>
+        <a routerLink="/destination" routerLinkActive="selected">01 DESTINATION</a>
+        <a routerLink="/crew" routerLinkActive="selected">02 CREW</a>
+        <a routerLink="/technology" routerLinkActive="selected">03 TECHNOLOGY</a>
+        <button (click)="onOpenMobile()" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</nav>
+<div class="backdrop">
+    <div class="mobile-menu" [class.active]="isActive" >
+        <button class="exitbtn" (click)="onCloseMobile()">X</button>
+        <a href="" class="mobile home" routerLink="/home" routerLinkActive="selected-mobile" (click)="onCloseMobile()">00 &nbsp; HOME</a>
+        <a href="" class="mobile destination" routerLink="/destination" routerLinkActive="selected-mobile" (click)="onCloseMobile()">01 &nbsp; DESTINATION</a>
+        <a href="" class="mobile crew" routerLink="/crew" routerLinkActive="selected-mobile" (click)="onCloseMobile()">02 &nbsp; CREW</a>
+        <a href="" class="mobile technology" routerLink="/technology" routerLinkActive="selected-mobile" (click)="onCloseMobile()">03 &nbsp; TECHNOLOGY</a>
+    </div>
+</div>

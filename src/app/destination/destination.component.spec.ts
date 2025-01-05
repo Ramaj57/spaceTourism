@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DestinationComponent } from './destination.component';
+import { ActivatedRouteSnapshot, ResolveFn, RouterStateSnapshot } from '@angular/router';
 
 describe('DestinationComponent', () => {
   let component: DestinationComponent;
@@ -21,3 +22,4 @@ describe('DestinationComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
