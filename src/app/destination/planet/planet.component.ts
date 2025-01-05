@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { spacedata } from '../../../data';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-planet',
@@ -10,9 +10,29 @@ import { RouterLink } from '@angular/router';
   styleUrl: './planet.component.css',
 })
 export class PlanetComponent {
-  name = spacedata[0].destinations[0].name;
-  image = spacedata[0].destinations[0].image;
-  description = spacedata[0].destinations[0].description;
-  distance = spacedata[0].destinations[0].distance;
-  travel = spacedata[0].destinations[0].travel;
+  name = '';
+  image = '';
+  description = '';
+  distance = '';
+  travel = '';
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.params.subscribe(params => {
+      const planetName = params['planet'];
+
+      const planet = spacedata[0].destinations.find(
+        (p) => p.name.toLowerCase() === planetName.toLowerCase()
+      );
+
+      if (planet) {
+        this.name = planet.name;
+        this.image = planet.image;
+        this.description = planet.description;
+        this.distance = planet.distance;
+        this.travel = planet.travel;
+      }
+    });
+  }
 }
