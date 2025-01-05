@@ -1,26 +1,20 @@
-
- <div class="destination-flex">
-  <div class="nav-title">PICK YOUR DESTINATION</div>  
-  <img [src]="planets().image" alt="">
-  <div class="desktop-flex">  
-  <nav>
-    <a [routerLink]="['/destination','moon']" routerLinkActive="selected">MOON</a>
-    <a [routerLink]="['/destination','mars']" routerLinkActive="selected">MARS</a>
-    <a [routerLink]="['/destination','europa']" routerLinkActive="selected">EUROPA</a>
-    <a [routerLink]="['/destination','titan']" routerLinkActive="selected">TITAN</a>
-  </nav>
-  <div class="name">{{ planets().name }}</div>
-  <div class="description">{{planets().description}}</div>
-  <div class="hline"></div>
-  <div class="bottom-flex">
-    <div class="distance">
-      <div class="distance-label">AVG. DISTANCE</div>
-      <div class="distance-value">{{planets().distance}}</div>
-    </div>
-    <div class="travel">
-      <div class="travel-label">EST. TRAVEL TIME</div>
-      <div class="travel-value">{{planets().travel}}</div>
-    </div>
+<div class="destination-flex">
+  <div class="nav-title">PICK YOUR DESTINATION</div>
+  <img [src]="planets().image" alt="" />
+  <div class="desktop-flex">
+    <nav>
+      <a [routerLink]="['/destination', 'moon']" routerLinkActive="selected forReal" [routerLinkActiveOptions]="{exact: true}" >MOON</a
+      >
+      <a [routerLink]="['/destination', 'mars']" routerLinkActive="selected forReal"
+        >MARS</a
+      >
+      <a [routerLink]="['/destination', 'europa']" routerLinkActive="selected forReal"
+        >EUROPA</a
+      >
+      <a [routerLink]="['/destination', 'titan']" routerLinkActive="selected forReal"
+        >TITAN</a
+      >
+    </nav>
+    <router-outlet></router-outlet>
   </div>
-</div>
 </div>
