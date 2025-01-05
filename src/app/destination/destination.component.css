@@ -1,5 +1,5 @@
 /* Mobile phone view*/
-@media (min-width: 320px) {
+
   .destination-flex {
     display: flex;
     flex-direction: column;
@@ -102,7 +102,10 @@
     height: 32px;
     margin: 0 0 24px 0;
   }
-}
+  .selected.forReal{
+    color:brown;
+  }
+
 /* Tablet view*/
 @media (min-width: 746px) {
   .destination-flex {
@@ -360,4 +363,7 @@
     height: 32px;
     margin: 0 0 0 0;
   }
+  .selected{
+  color:brown;
+}
 }
