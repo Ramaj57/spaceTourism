@@ -15,13 +15,21 @@ export const routes: Routes = [
         path: 'home', component: HomeComponent,
     },
     {
-        path: 'destination', component: DestinationComponent,
+        path: 'destination',
+        component: DestinationComponent,
         children: [
             {
-                path: ':planet', component: PlanetComponent,
+                path: '',
+                redirectTo: 'moon',
+                pathMatch: 'full',
+            },
+            {
+                path: ':planet',
+                component: PlanetComponent,
             },           
         ]
     },
+    
     {
         path: 'crew', component: CrewComponent,
         children: [
