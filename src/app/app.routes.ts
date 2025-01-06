@@ -34,13 +34,23 @@ export const routes: Routes = [
         path: 'crew', component: CrewComponent,
         children: [
             {
-                path: ':crewName', component: MemberComponent,
+                path: '',
+                redirectTo: 'Douglas Hurley',
+                pathMatch: 'full',
+            },
+            {
+                path: ':member', component: MemberComponent,
             },            
         ]
     },
     {
         path: 'technology', component: TechnologyComponent,
         children: [
+            {
+                path: '',
+                redirectTo: 'Launch vehicle',
+                pathMatch: 'full',
+            },
             {
                 path: ':equipment', component: EquipmentComponent,
             },            
