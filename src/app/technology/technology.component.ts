@@ -1,15 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { spacedata } from '../../data';
 
 @Component({
   selector: 'app-technology',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive,RouterOutlet],
+  imports: [RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './technology.component.html',
-  styleUrl: './technology.component.css'
+  styleUrl: './technology.component.css',
 })
-export class TechnologyComponent {
-  equipment = signal(spacedata[0].technology[0])
-  
-}
+export class TechnologyComponent {}
