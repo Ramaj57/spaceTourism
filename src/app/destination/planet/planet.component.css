@@ -21,11 +21,11 @@
       height: 19px;
     }
   
-    img {
+    /* img {
       width: 150px;
       height: 150px;
       margin: 0 0 56px 0;
-    }
+    } */
   
     button {
       font-size: 14px;
@@ -128,9 +128,9 @@
     }
   
     img {
-      width: 300px;
+      /* width: 300px;
       height: 300px;
-      margin: 0 0 74px 0;
+      margin: 0 0 74px 0; */
     }
   
     button {
@@ -251,8 +251,7 @@
   
     img {
       position: absolute;
-      left: 194px;
-      bottom: 127px;
+      left: -700px;
       width: 480px;
       height: 480px;
       margin: 0 0 74px 0;

@@ -27,7 +27,7 @@
     margin: 64px 0 32px 0;
   }
 
-  button {
+  a {
     font-size: 18px;
     height: 40px;
     width: 40px;
@@ -108,7 +108,7 @@
     margin: 0 0 32px 0;
   }
 
-  button {
+  a {
     font-size: 24px;
     height: 56px;
     width: 56px;
@@ -206,8 +206,8 @@
     margin: 0 0 0 0;
   }
 
-  button {
-    display: hidden;
+  a {
+    display: block;
     font-size: 32px;
     height: 80px;
     width: 80px;
@@ -220,6 +220,7 @@
     font-family: "Bellefair", serif;
     font-weight: 400;
     font-style: normal;
+    cursor: pointer;
   }
 
   nav {

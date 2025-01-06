@@ -1,11 +1,11 @@
-/* Mobile phone view*/
+/* Mobile phone view*/ 
 @media (min-width: 320px) {
   .crew-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-height: 100vh;
+    
     padding: 24px 24px 0 24px;
   }
 
@@ -68,10 +68,7 @@
   }
 
   /* figure out how to blur image on the bottom */
-  img {
-    width: 271px;
-    max-height: 340px;
-  }
+  
 }
 /* Tablet view*/
 @media (min-width: 746px) {
@@ -80,7 +77,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;    
-    max-height: 100vh;
+    
     padding: 40px 0 0 0;
   }
 
@@ -113,10 +110,7 @@
     margin: 0 0 32px 0;
   }
 
-  img {
-    width: 446px;
-    max-height: 491px;
-  }
+  
 }
 /* Desktop view*/
 @media (min-width: 1440px) {
@@ -125,8 +119,8 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    row-gap: 0;
-    max-height: 100vh;
+
+    
     padding: 48px 165px 48px 165px;
   }
 
@@ -167,17 +161,6 @@
   nav {
     width:539px;
     margin: 221px 0 48px 0;
-  }
-
-  img {
-    position:absolute;
-    bottom:48px;
-    right:165px;
-    width:539px;
-    align-self: flex-end;
-    max-height: 676px;
-     
-       
   }
 
   a {    
