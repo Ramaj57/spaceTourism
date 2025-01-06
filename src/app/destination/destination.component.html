@@ -1,17 +1,26 @@
 <div class="destination-flex">
   <div class="nav-title">PICK YOUR DESTINATION</div>
-  <img [src]="planets().image" alt="" />
   <div class="desktop-flex">
     <nav>
-      <a [routerLink]="['/destination', 'moon']" routerLinkActive="selected forReal" [routerLinkActiveOptions]="{exact: true}" >MOON</a
+      <a
+        [routerLink]="['/destination', 'moon']"
+        routerLinkActive="selected forReal"
+        
+        >MOON</a
       >
-      <a [routerLink]="['/destination', 'mars']" routerLinkActive="selected forReal"
+      <a
+        [routerLink]="['/destination', 'mars']"
+        routerLinkActive="selected forReal"
         >MARS</a
       >
-      <a [routerLink]="['/destination', 'europa']" routerLinkActive="selected forReal"
+      <a
+        [routerLink]="['/destination', 'europa']"
+        routerLinkActive="selected forReal"
         >EUROPA</a
       >
-      <a [routerLink]="['/destination', 'titan']" routerLinkActive="selected forReal"
+      <a
+        [routerLink]="['/destination', 'titan']"
+        routerLinkActive="selected forReal"
         >TITAN</a
       >
     </nav>
