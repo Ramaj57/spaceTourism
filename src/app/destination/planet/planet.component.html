@@ -1,13 +1,14 @@
-  <div class="name">{{ name }}</div>
-  <div class="description">{{description}}</div>
-  <div class="hline"></div>
-  <div class="bottom-flex">
-    <div class="distance">
-      <div class="distance-label">AVG. DISTANCE</div>
-      <div class="distance-value">{{distance}}</div>
-    </div>
-    <div class="travel">
-      <div class="travel-label">EST. TRAVEL TIME</div>
-      <div class="travel-value">{{travel}}</div>
-    </div>
+<img [src]="image()" [alt]="'image of' + name()" />
+<div class="name">{{ name() }}</div>
+<div class="description">{{ description() }}</div>
+<div class="hline"></div>
+<div class="bottom-flex">
+  <div class="distance">
+    <div class="distance-label">AVG. DISTANCE</div>
+    <div class="distance-value">{{ distance() }}</div>
   </div>
+  <div class="travel">
+    <div class="travel-label">EST. TRAVEL TIME</div>
+    <div class="travel-value">{{ travel() }}</div>
+  </div>
+</div>
