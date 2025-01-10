@@ -1,23 +1,21 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
-
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  styleUrl: './nav-bar.component.css',
 })
 export class NavBarComponent {
-  
-  isActive = false;
+  isActive = signal(false);
 
   onOpenMobile() {
-    this.isActive = true;
+    this.isActive.set(true);
   }
 
   onCloseMobile() {
-    this.isActive = false;
+    this.isActive.set(false);
   }
 }

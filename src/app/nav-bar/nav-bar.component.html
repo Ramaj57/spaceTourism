@@ -1,24 +1,44 @@
 <header class="nav-bar">
-    <img class="logo" src="assets/nav-bar/Logo.png" alt="MUAHAHAHA">
-    <div class="nav-hline"></div>
-    <nav class="nav-links">
-        <a routerLink="/home" routerLinkActive="selected">00 HOME</a>
-        <a routerLink="/destination" routerLinkActive="selected">01 DESTINATION</a>
-        <a routerLink="/crew" routerLinkActive="selected">02 CREW</a>
-        <a routerLink="/technology" routerLinkActive="selected">03 TECHNOLOGY</a>
-        <button (click)="onOpenMobile()" class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-    </nav>
+  <img class="logo" src="assets/nav-bar/Logo.png" alt="MUAHAHAHA" />
+  <div class="nav-hline"></div>
+  <nav class="nav-links">
+    <a routerLink="/home" routerLinkActive="selected">00 HOME</a>
+    <a routerLink="/destination" routerLinkActive="selected">01 DESTINATION</a>
+    <a routerLink="/crew" routerLinkActive="selected">02 CREW</a>
+    <a routerLink="/technology" routerLinkActive="selected">03 TECHNOLOGY</a>
+    <button (click)="onOpenMobile()" class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </nav>
 </header>
 <div class="backdrop">
-    <menu class="mobile-menu" [class.active]="isActive" >
-        <button class="exitbtn" (click)="onCloseMobile()">X</button>
-        <a routerLink="/home" routerLinkActive="selected-mobile" (click)="onCloseMobile()">00 &nbsp; HOME</a>
-        <a routerLink="/destination" routerLinkActive="selected-mobile" (click)="onCloseMobile()">01 &nbsp; DESTINATION</a>
-        <a routerLink="/crew" routerLinkActive="selected-mobile" (click)="onCloseMobile()">02 &nbsp; CREW</a>
-        <a routerLink="/technology" routerLinkActive="selected-mobile" (click)="onCloseMobile()">03 &nbsp; TECHNOLOGY</a>
-    </menu>
+  <menu class="mobile-menu" [class.active]="isActive()">
+    <button class="exitbtn" (click)="onCloseMobile()">X</button>
+    <a
+      routerLink="/home"
+      routerLinkActive="selected-mobile"
+      (click)="onCloseMobile()"
+      >00 &nbsp; HOME</a
+    >
+    <a
+      routerLink="/destination"
+      routerLinkActive="selected-mobile"
+      (click)="onCloseMobile()"
+      >01 &nbsp; DESTINATION</a
+    >
+    <a
+      routerLink="/crew"
+      routerLinkActive="selected-mobile"
+      (click)="onCloseMobile()"
+      >02 &nbsp; CREW</a
+    >
+    <a
+      routerLink="/technology"
+      routerLinkActive="selected-mobile"
+      (click)="onCloseMobile()"
+      >03 &nbsp; TECHNOLOGY</a
+    >
+  </menu>
 </div>
