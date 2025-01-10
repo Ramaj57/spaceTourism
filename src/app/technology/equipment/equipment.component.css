@@ -1,268 +1,97 @@
 /* Mobile phone view*/
-@media (min-width: 320px) {
-    .technology-flex {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      max-height: 100vh;
-      padding: 24px 24px 48px 24px;
-    }
-  
-    .nav-title {
-      font-size: 16px;
-      line-height: 19.2%;
-      font-family: "Barlow Condensed", serif;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: 15%;
-      color: var(--white);
-      margin: 24px 0 0 0;
-      height: 19px;
-    }
-  
-    img {
-      width: 100vw;
-      height: 258px;
-      margin: 64px 0 32px 0;
-    }
-  
-    a {
-      font-size: 18px;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      margin: 0 8px 0 8px;
-      color: var(--white);
-      line-height: 20.6%;
-      background-color: transparent;
-      border: 1px solid hsl(0, 0%, 25%);
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-  
-    nav {
-      margin: 0 0 40px 0;
-    }
-  
-    .terminology {
-      font-size: 18px;
-      line-height: 20.6%;
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--faintWhite);
-      margin: 0 0 12px 0;
-      height: 21px;
-    }
-  
-    .name {
-      font-size: 24px;
-      line-height: 27.5%;
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--white);
-      height: 28px;
-    }
-  
-    .description {
-      font-size: 15px;
-      line-height: 180%;
-      font-family: "Barlow", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--lightBlue);
-      margin: 0 0 24px 0;
-      height: 162px;
-    }
+img {
+  width: 100vw;
+  height: 170px;
+  margin: -40px 0 100px;
+}
+
+.terminology,
+.name {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.terminology {
+  font-size: 18px;
+  line-height: 20.6%;
+  color: var(--faintWhite);
+  margin-bottom: 12px;
+  height: 21px;
+}
+
+.name {
+  font-size: 24px;
+  line-height: 27.5%;
+  color: var(--white);
+  height: 28px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 180%;
+  font-family: "Barlow", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--lightBlue);
+  margin: 0 0 24px 0;
+  height: 162px;
+  padding: 0 24px;
+}
+
+/* Tablet view*/
+@media (min-width: 746px) {
+  img {
+    height: 357px;
+    margin: -150px 0 150px 0;
   }
-  /* Tablet view*/
-  @media (min-width: 746px) {
-    .technology-flex {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      max-height: 100vh;
-      padding: 40px 40px 40px 40px;
-    }
-  
-    .nav-title {
-      font-size: 20px;
-      line-height: 24%;
-      font-family: "Barlow Condensed", serif;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: 15%;
-      color: var(--white);
-      margin: 0 0 88px 0;
-      height: 24px;
-      align-self: flex-start;
-    }
-  
-    img {
-      width: 100vw;
-      height: 357px;
-      margin: 0 0 32px 0;
-    }
-  
-    a {
-      font-size: 24px;
-      height: 56px;
-      width: 56px;
-      border-radius: 50%;
-      margin: 0 8px 0 8px;
-      color: var(--white);
-      line-height: 27.5%;
-      background-color: transparent;
-      border: 1px solid hsl(0, 0%, 25%);
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-  
-    nav {
-      margin: 0 0 40px 0;
-    }
-  
-    .terminology {
-      font-size: 24px;
-      line-height: 27.5%;
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--faintWhite);
-      margin: 0 0 16px 0;
-      height: 28px;
-    }
-  
-    .name {
-      font-size: 40px;
-      line-height: 45.8%;
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--white);
-      height: 46px;
-      margin: 0 0 16px 0;
-    }
-  
-    .description {
-      font-size: 16px;
-      line-height: 180%;
-      font-family: "Barlow", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--lightBlue);
-      margin: 0 88px 0 88px;
-      height: 145px;
-    }
+
+  .terminology {
+    font-size: 24px;
+    line-height: 27.5%;
+    margin-bottom: 16px;
+    height: 28px;
   }
-  /* Desktop view*/
-  @media (min-width: 1440px) {
-    .technology-flex {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      max-height: 100vh;
-      padding: 48px 0 48px 165px;
-    }
-  
-    .seperator {
-      display: flex;
-      align-self: flex-start;
-      justify-content: center;
-      width: 635px;
-      height: 304px;
-      margin: 0 32px 0 0;
-    }
-  
-    .seperator-2 {
-      text-align: left;
-    }
-  
-    .nav-title {
-      font-size: 28px;
-      line-height: 33.6%;
-      font-family: "Barlow Condensed", serif;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: 4px;
-      color: var(--white);
-      margin: 0 0 239px 0;
-      height: 34px;
-      align-self: flex-start;
-    }
-  
-    img {
-      position: absolute;
-      right: 0;
-      bottom: 115px;
-      width: 608px;
-      height: 600px;
-      margin: 0 0 0 0;
-    }
-  
-    a {
-      display: block;
-      font-size: 32px;
-      height: 80px;
-      width: 80px;
-      border-radius: 50%;
-      margin: 16px 64px 16px 0;
-      color: var(--white);
-      line-height: 36.75%;
-      background-color: transparent;
-      border: 1px solid hsl(0, 0%, 25%);
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-      cursor: pointer;
-    }
-  
-    nav {
-      margin: 0 0 40px 0;
-    }
-  
-    .terminology {
-      font-size: 32px;
-      line-height: 36.7%;
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--faintWhite);
-      margin: 0 0 16px 0;
-      height: 37px;
-    }
-  
-    .name {
-      font-size: 56px;
-      line-height: 64.2%;
-      font-family: "Bellefair", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--white);
-      height: 64px;
-      margin: 0 0 16px 0;
-    }
-  
-    .description {
-      font-size: 18px;
-      line-height: 180%;
-      font-family: "Barlow", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: var(--lightBlue);
-      margin: 0 0 0 0;
-      height: 160px;
-    }
-  
-    .selected {
-      background-color: white;
-      color: var(--darkBlue);
-    }
+
+  .name {
+    font-size: 40px;
+    line-height: 45.8%;
+    height: 46px;
+    margin-bottom: 16px;
   }
-  
+
+  .description {
+    font-size: 16px;
+    margin: 0 88px;
+    height: 145px;
+  }
+}
+/* Desktop view*/
+@media (min-width: 1440px) {
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 115px;
+    width: 608px;
+    height: 600px;
+    margin: 0;
+  }
+
+  .terminology {
+    font-size: 32px;
+    line-height: 36.7%;
+    height: 37px;
+  }
+
+  .name {
+    font-size: 56px;
+    line-height: 64.2%;
+    height: 64px;
+  }
+
+  .description {
+    font-size: 18px;
+    margin: 0;
+    height: 160px;
+  }
+}

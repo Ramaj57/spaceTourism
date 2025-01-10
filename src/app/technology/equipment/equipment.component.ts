@@ -7,7 +7,7 @@ import { spacedata } from '../../../data';
   standalone: true,
   imports: [],
   templateUrl: './equipment.component.html',
-  styleUrl: './equipment.component.css'
+  styleUrl: './equipment.component.css',
 })
 export class EquipmentComponent {
   name = signal('');
@@ -15,21 +15,19 @@ export class EquipmentComponent {
   description = signal('');
   private route = inject(ActivatedRoute);
 
- ngOnInit() {
-  this.route.params.subscribe((params) => {
-    const equipmentName = params['equipment'];
+  ngOnInit() {
+    this.route.params.subscribe((params) => {
+      const equipmentName = params['equipment'];
 
-    const equipment = spacedata[0].technology.find(
-      (e) => e.name.toLowerCase() === equipmentName.toLowerCase());
+      const equipment = spacedata[0].technology.find(
+        (e) => e.name.toLowerCase() === equipmentName.toLowerCase()
+      );
 
       if (equipment) {
         this.name.set(equipment.name);
         this.image.set(equipment.image);
         this.description.set(equipment.description);
       }
- }
-  
-
-)
-}
+    });
+  }
 }
