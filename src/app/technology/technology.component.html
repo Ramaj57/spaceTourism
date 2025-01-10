@@ -1,15 +1,21 @@
 <div class="technology-flex">
-    <h2 class="nav-title">SPACE LAUNCH 101</h2>
-    <div class="seperator">
-        <nav>
-           <a [routerLink]="['/technology', 'Launch vehicle']" routerLinkActive="selected">1</a> 
-            <a [routerLink]="['/technology', 'Spaceport']" routerLinkActive="selected">2</a>
-            <a [routerLink]="['/technology', 'Space capsule']" routerLinkActive="selected">3</a>
-        </nav>
-        <div class="seperator-2">
-            <h3 class="terminology">THE TERMINOLOGY...</h3>
-            <router-outlet/>
-        </div>
-    </div>
+  <h2 class="nav-title">SPACE LAUNCH 101</h2>
+  <nav>
+    <a
+      [routerLink]="['/technology', 'Launch vehicle']"
+      routerLinkActive="selected"
+      >1</a
+    >
+    <a [routerLink]="['/technology', 'Spaceport']" routerLinkActive="selected"
+      >2</a
+    >
+    <a
+      [routerLink]="['/technology', 'Space capsule']"
+      routerLinkActive="selected"
+      >3</a
+    >
+  </nav>
+  <div class="seperator">
+    <router-outlet />
+  </div>
 </div>
-
