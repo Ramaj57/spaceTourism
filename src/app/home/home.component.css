@@ -9,7 +9,7 @@
 }
 
 .intro,
-.hype {
+.hook {
   color: var(--lightBlue);
 }
 
@@ -39,14 +39,14 @@ button,
   height: 92px;
 }
 
-.hype {
+.hook {
   font-family: "Barlow", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
   line-height: 180%;
   height: 135px;
-  margin-bottom: 119px;
+  margin-bottom: 80px;
 }
 
 button {
@@ -77,7 +77,7 @@ button {
     height: 165px;
   }
 
-  .hype {
+  .hook {
     font-size: 16px;
     height: 87px;
   }
@@ -108,9 +108,9 @@ button {
     margin: 289px 0 24px 0;
   }
 
-  .hype {
+  .hook {
     font-size: 18px;
-    height: 96px;
+    height: 96px;    
   }
 
   button {
