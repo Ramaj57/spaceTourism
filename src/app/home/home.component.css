@@ -1,189 +1,122 @@
 /* Mobile phone view*/
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-height: 100vh;
-    padding: 24px;
-  }
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  max-height: 90vh;
+}
 
-  .intro {
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19.2%;
-    letter-spacing: 15%;
-    color: var(--lightBlue);
-    margin: 0 0 24px 0;
-    height: 24px;
-  }
+.intro,
+.hype {
+  color: var(--lightBlue);
+}
 
-  .title {
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 80px;
-    line-height: 91.7%;
-    color: var(--white);
-    margin: 0 0 24px 0;
-    height: 92px;
-  }
+.intro {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19.2%;
+  letter-spacing: 15%;
+  margin: 0 0 24px 0;
+  height: 24px;
+}
 
-  .hype {
-    font-family: "Barlow", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 180%;
-    color: var(--lightBlue);
-    height: 135px;
-    margin: 0 0 119px 0;
-  }
+button,
+.title {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  button {
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    border-radius: 50%;
-    height: 144px;
-    width: 144px;
-    border: none;
-    font-size: 18px;
-    line-height: 20.6%;
-    color: var(--darkBlue);
-    box-shadow: 0 0 0 90px rgba(255, 255, 255, 0);
-    transition-duration: 500ms;
-    transition-timing-function: ease-in;
-  }
+.title {
+  color: var(--white);
+  font-size: 80px;
+  line-height: 91.7%;
+  margin: 0 0 24px 0;
+  height: 92px;
+}
+
+.hype {
+  font-family: "Barlow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 180%;
+  height: 135px;
+  margin-bottom: 119px;
+}
+
+button {
+  border-radius: 50%;
+  height: 144px;
+  width: 144px;
+  border: none;
+  font-size: 18px;
+  line-height: 20.6%;
+  color: var(--darkBlue);
+}
 /* Tablet view*/
 @media (min-width: 746px) {
   .flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-height: 100vh;
     padding: 128px;
   }
 
   .intro {
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 28px;
     line-height: 33.6%;
     letter-spacing: 4px;
-    color: var(--lightBlue);
-    margin: 0 0 24px 0;
     height: 34px;
   }
 
   .title {
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 144px;
     line-height: 165%;
-    color: var(--white);
-    margin: 0 0 24px 0;
     height: 165px;
   }
 
   .hype {
-    font-family: "Barlow", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
-    line-height: 180%;
-    color: var(--lightBlue);
     height: 87px;
-    margin-bottom: 48px;
   }
 
   button {
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    border-radius: 50%;
-    height: 272px;
-    width: 272px;
-    border: none;
+    height: 274px;
+    width: 274px;
     font-size: 32px;
     line-height: 36.7%;
-    color: var(--darkBlue);
-    box-shadow: 0 0 0 90px rgba(255, 255, 255, 0);
-    transition-duration: 500ms;
-    transition-timing-function: ease-in;
   }
 }
 
 @media (min-width: 1440px) {
   .flex-container {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     text-align: left;
-    max-height: 100vh;
-    padding: 128px 165px 128px 165px;
+    padding: 128px 165px;
   }
 
-  .seperator-left{
-    display:flex;
+  .content {
+    display: flex;
     flex-direction: column;
-    width:540px;
-    height:343px;
+    width: 540px;
+    height: 343px;
   }
 
   .intro {
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 28px;
-    line-height: 33.6%;
-    letter-spacing: 4px;
-    color: var(--lightBlue);
     margin: 289px 0 24px 0;
-    height: 34px;
-  }
-
-  .title {
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 144px;
-    line-height: 165%;
-    color: var(--white);
-    margin: 0 0 24px 0;
-    height: 165px;
   }
 
   .hype {
-    font-family: "Barlow", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 18px;
-    line-height: 180%;
-    color: var(--lightBlue);
     height: 96px;
-    margin-bottom: 48px;
   }
 
   button {
-    position:absolute;
-    bottom:199px;
-    right:128px;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    border-radius: 50%;
-    height: 272px;
-    width: 272px;
-    border: none;
-    font-size: 32px;
-    line-height: 36.7%;
-    color: var(--darkBlue);
+    position: absolute;
+    bottom: 199px;
+    right: 128px;
     box-shadow: 0 0 0 90px rgba(255, 255, 255, 0);
     transition-duration: 500ms;
     transition-timing-function: ease-in;
@@ -195,6 +128,4 @@
     box-shadow: 0 0 0 90px rgba(255, 255, 255, 0.1);
     background-color: var(--white);
   }
-
-  
 }
