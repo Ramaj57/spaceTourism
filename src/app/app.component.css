@@ -1,12 +1,10 @@
 /* Mobile phone view*/
- @media(min-width:320px){
     .background-image{      
     background-image: url('/assets/technology/background-technology-mobile.jpg');
     background-size:cover;
     height: 100vh;
     max-width: 100%;
     }
-}
 
  /* Tablet view*/
  @media(min-width:746px){

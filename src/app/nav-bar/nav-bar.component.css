@@ -1,6 +1,5 @@
 /* Mobile phone view*/
-@media (min-width: 320px) {
-  .nav-flex {
+  .nav-bar {
     display: flex;
     justify-content: space-between;
     height: 88px;
@@ -90,12 +89,9 @@
     border-right:4px solid var(--white);
   }
 
-  
-}
-
 /* Tablet view*/
 @media (min-width: 746px) {
-  .nav-flex {
+  .nav-bar {
     display: flex;
     justify-content: space-between;
     height: 96px;    
@@ -108,7 +104,7 @@
     margin-right:36px;
   }
 
-  .this{
+  .nav-links{
     display:flex;
     width:740px;
     justify-content: flex-end;
@@ -144,7 +140,7 @@
 }
 /* Desktop view*/
 @media (min-width: 1440px) {
-  .nav-flex {
+  .nav-bar {
     display: flex;
     justify-content: space-between;
     height: 136px;    
@@ -169,7 +165,7 @@
     
   }
 
-  .this{
+  .nav-links{
     display:flex;
     width:740px;
     justify-content: flex-end;

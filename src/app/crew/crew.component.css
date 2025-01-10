@@ -1,5 +1,4 @@
 /* Mobile phone view*/ 
-@media (min-width: 320px) {
   .crew-flex {
     display: flex;
     flex-direction: column;
@@ -69,7 +68,6 @@
 
   /* figure out how to blur image on the bottom */
   
-}
 /* Tablet view*/
 @media (min-width: 746px) {
   .crew-flex {
