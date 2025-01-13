@@ -1,181 +1,126 @@
 /* Mobile phone view*/
 
-  .destination-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-height: 100vh;
-    padding: 24px 0 0 0;
-  }
+.destination-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-height: 90vh;
+  padding: 24px 24px 0 24px;
+}
 
-  .nav-title {
-    font-size: 16px;
-    line-height: 19.2%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 15%;
-    color: var(--white);
-    margin: 0 0 48px 0;
-    height: 19px;
-  }
+.nav-title,
+nav a {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  button {
-    font-size: 14px;
-    line-height: 16.8%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    background-color: transparent;
-    letter-spacing: 15%;
-    border: none;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 15px;
-    margin: 0 16px 0 16px;
-  }
+.name,
+.nav-title,
+nav a.selected {
+  color: var(--white);
+}
 
-  nav {
-    margin: 0 0 24px 0;
-    height: 32px;
-    width: 100%;
-  }
+.description,
+nav a {
+  color: var(--lightBlue);
+}
 
-  .name {
-    font-size: 56px;
-    line-height: 64.2%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    margin: 0 0 16px 0;
-    height: 64px;
-  }
+.nav-title {
+  font-size: 16px;
+  line-height: 19.2%;
+  letter-spacing: 15%;
+  margin-bottom: 48px;
+  padding: 0 0 0 48px;
+  height: 19px;
+}
 
-  .description {
-    font-size: 15px;
-    line-height: 180%;
-    font-family: "Barlow", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--lightBlue);
-    height: 135px;
-  }
+nav a {
+  font-size: 14px;
+  line-height: 16.8%;
+  background-color: transparent;
+  letter-spacing: 15%;
+  border: none;
+  text-decoration: none;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 15px;
+  margin: 0 16px;
+}
 
-  .hline {
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: hsl(0, 0%, 25%);
-    margin: 24px 0 24px 0;
-  }
+nav a.selected {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 15px;
+}
 
-  .distance-label,
-  .travel-label {
-    font-size: 14px;
-    line-height: 16.8%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--lightBlue);
-    letter-spacing: 2px;
-    margin: 0 0 12px 0;
-    height: 17px;
-  }
+nav {
+  margin-bottom: 24px;
+  height: 32px;
+}
 
-  .distance-value,
-  .travel-value {
-    font-size: 28px;
-    line-height: 32.1%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    height: 32px;
-    margin: 0 0 24px 0;
-  }
-  .selected.forReal{
-    color:brown;
-  }
+.name {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 64.2%;
+  margin-bottom: 16px;
+  height: 64px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 180%;
+  height: 135px;
+}
+
+.distance-label,
+.travel-label {
+  font-size: 14px;
+  line-height: 16.8%;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  height: 17px;
+}
 
 /* Tablet view*/
 @media (min-width: 746px) {
   .destination-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-height: 100vh;
     padding: 40px 0 0 0;
   }
 
   .nav-title {
     font-size: 20px;
     line-height: 24%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 15%;
-    color: var(--white);
-    margin: 0 0 66px 0;
+    margin-bottom: 66px;
     height: 24px;
     align-self: flex-start;
   }
 
-
-  button {
+  nav a {
     font-size: 16px;
     line-height: 19.2%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    background-color: transparent;
     letter-spacing: 2px;
-    border: none;
+    margin: 0 16px;
+  }
+
+  nav a.selected {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 15px;
-    margin: 0 16px 0 16px;
-  }
-
-  nav {
-    margin: 0 0 24px 0;
-    height: 32px;
-    width: 100%;
   }
 
   .name {
     font-size: 80px;
     line-height: 91.7%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    margin: 0 0 16px 0;
     height: 92px;
   }
 
   .description {
-    font-size: 15px;
-    line-height: 180%;
-    font-family: "Barlow", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--lightBlue);
     height: 87px;
-    margin: 0 0 24px 0;
-    padding: 0 85px 0 85px;
-  }
-
-  .hline {
-    display: block;
-    height: 1px;
-    width: 514px;
-    background-color: hsl(0, 0%, 25%);
-    margin: 0 0 24px 0;
+    margin-bottom: 24px;
+    padding: 0 85px;
   }
 
   .bottom-flex {
@@ -183,61 +128,27 @@
     justify-content: space-between;
   }
 
-  .travel {
-    width: 245px;
-  }
-
+  .travel,
   .distance {
     width: 245px;
   }
 
-  .distance-label,
-  .travel-label {
-    font-size: 14px;
-    line-height: 16.8%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--lightBlue);
-    letter-spacing: 2px;
-    margin: 0 0 12px 0;
-    height: 17px;
-  }
-
   .distance-value,
   .travel-value {
-    font-size: 28px;
-    line-height: 32.1%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    height: 32px;
-    margin: 0 0 0 0;
+    margin: 0;
   }
 }
 /* Desktop view*/
 @media (min-width: 1440px) {
   .destination-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-height: 100vh;
-    padding: 48px 165px 48px 165px;
+    padding: 48px 165px;
   }
 
   .nav-title {
     font-size: 28px;
     line-height: 33.6%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
     letter-spacing: 15%;
-    color: var(--white);
-    margin: 0 0 66px 0;
     height: 34px;
-    align-self: flex-start;
     letter-spacing: 4px;
   }
 
@@ -248,102 +159,40 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 539px;    
+    width: 539px;
     height: 734px;
-    padding: 133px 47px 133px 47px;
+    padding: 133px 47px;
   }
 
   nav a {
-    font-size: 16px;
-    line-height: 19.2%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    background-color: transparent;
-    letter-spacing: 2px;
-    border: none;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 15px;
     margin: 0 32px 0 0;
   }
 
+  nav a.selected {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 15px;
+  }
+
   nav {
-    margin: 0 0 40px 0;
-    height: 32px;
-    width: 100%;
+    margin-bottom: 40px;
   }
 
   .name {
     font-size: 96px;
     line-height: 110%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    margin: 0 0 16px 0;
     height: 110px;
   }
 
   .description {
     font-size: 18px;
-    line-height: 180%;
-    font-family: "Barlow", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--lightBlue);
     height: 128px;
-    margin: 0 0 40px 0;
-    padding: 0 0 0 0;
-  }
-
-  .hline {
-    display: block;
-    height: 1px;
-    width: 441px;
-    background-color: hsl(0, 0%, 25%);
-    margin: 0 0 40px 0;
+    margin-bottom: 40px;
+    padding: 0;
   }
 
   .bottom-flex {
     display: flex;
     justify-content: space-between;
   }
-
-  .travel {
-    width: 245px;
-  }
-
-  .distance {
-    width: 245px;
-  }
-
-  .distance-label,
-  .travel-label {
-    font-size: 14px;
-    line-height: 16.8%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--lightBlue);
-    letter-spacing: 2px;
-    margin: 0 0 12px 0;
-    height: 17px;
-  }
-
-  .distance-value,
-  .travel-value {
-    font-size: 28px;
-    line-height: 32.1%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    height: 32px;
-    margin: 0 0 0 0;
-  }
-  .selected{
-  color:brown;
-}
 }
