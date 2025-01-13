@@ -1,6 +1,8 @@
 /* Mobile phone view*/
 
 img {
+  position: relative;
+  bottom: 50px;
   width: 150px;
   height: 150px;
   margin-bottom: 56px;
@@ -29,7 +31,7 @@ img {
 .name {
   font-size: 56px;
   line-height: 64.2%;
-  margin: 0 0 16px 0;
+  margin: 0;
   height: 64px;
 }
 
@@ -88,12 +90,12 @@ img {
   }
 
   .hline {
-    margin: 0 85px 24px 85px;
+    margin: 0 85px 36px 85px;
   }
 
   .bottom-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .travel,
@@ -110,7 +112,8 @@ img {
 @media (min-width: 1440px) {
   img {
     position: absolute;
-    left: -700px;
+    left: -600px;
+    bottom: 70px;
     width: 480px;
     height: 480px;
   }
