@@ -62,7 +62,7 @@ img {
 
   .description {
     font-size: 16px;
-    margin: 0 88px;
+    margin: 0 155px;
     height: 145px;
   }
 }
@@ -93,5 +93,6 @@ img {
     font-size: 18px;
     margin: 0;
     height: 160px;
+    padding:0;
   }
 }
