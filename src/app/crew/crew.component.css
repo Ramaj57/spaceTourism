@@ -1,170 +1,93 @@
-/* Mobile phone view*/ 
-  .crew-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-    padding: 24px 24px 0 24px;
-  }
+/* Mobile phone view*/
+.crew-flex {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 24px 0 24px;
+}
 
-  .nav-title {
-    height:19px;
-    font-size: 16px;
-    line-height: 19.2%;
-    font-family: "Barlow Condensed", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 15%;
-    color: var(--white);
-    margin: 24px 0 24px 0;
-  }
-  .role {
-    height:21px;
-    font-size: 18px;
-    line-height: 24.6%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--faintWhite);
-    margin: 40px 0 8px 0;
-  }
+.nav-title {
+  height: 19px;
+  font-size: 16px;
+  line-height: 19.2%;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 15%;
+  color: var(--white);
+}
 
-  .name {
-    height:28px;
-    font-size: 24px;
-    line-height: 27.5%;
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--white);
-    margin:0 0 24px 0;
-  }
+span {
+  color: var(--faintWhite);
+  margin-right: 24px;
+}
 
-  .bio {
-    font-size: 15px;
-    line-height: 180%;
-    font-family: "Barlow", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--lightBlue);
-    height: 164px;
-    margin:0 0 24px 0;
-  }
+nav {
+  margin-bottom: 32px;
+}
 
-  nav {
-    margin:0 0 32px 0;
-  }
+a {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: none;
+  background-color: hsl(0, 0%, 17%);
+  cursor: pointer;
+}
 
-  a {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    margin-right: 16px;
-    border: none;
-    background-color: var(--faintWhite);
-  }
+a:hover {
+  background-color: var(--faintWhite);
+}
 
-  /* figure out how to blur image on the bottom */
-  
+a.selected {
+  background-color: var(--white);
+}
+
+/* figure out how to blur image on the bottom */
+
 /* Tablet view*/
 @media (min-width: 746px) {
   .crew-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;    
-    
-    padding: 40px 0 0 0;
+    padding: 60px 40px 0 40px;
   }
 
   .nav-title {
-    height:24px;
+    height: 24px;
     font-size: 20px;
     line-height: 24%;
-    margin: 0 0 64px 0;
+    margin-bottom: 64px;
     text-align: left;
+    align-self: flex-start;
   }
-  .role {
-    height:28px;
-    font-size: 24px;
-    line-height: 27.5%;
-    margin: 0 0 16px 0;
-  }
-
-  .name {
-    height:46px;
-    font-size: 40px;
-    line-height: 45.8%;
-    margin:0 0 24px 0
-  }
-  .bio {
-    font-size: 16px;
-    height: 117px;
-  }
-
-  nav {
-    margin: 0 0 32px 0;
-  }
-
-  
 }
 /* Desktop view*/
 @media (min-width: 1440px) {
   .crew-flex {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     text-align: left;
-
-    
-    padding: 48px 165px 48px 165px;
-  }
-
-  .left-side{
-     width:539px;
-     margin:0 32px 0 0;
+    padding: 95px 165px 0 165px;
   }
 
   .nav-title {
-    height:34px;
+    height: 34px;
     font-size: 28px;
     line-height: 33.6%;
-    margin: 0 0 221px 0;
-    align-self: flex-start;
-    letter-spacing:4px;
-  }
-  .role {
-    font-size: 32px;
-    line-height: 36.7%;
-    margin: 0 0 16px 0;
-    width:539px;
-    height:37px;
-  }
-
-  .name {
-    height:64px;
-    font-size: 56px;
-    line-height: 64.2%;
-    margin: 0 0 24px 0;
-    width:539px;
-  }
-  .bio {
-    font-size: 18px;
-    height: 96px;
-    margin-bottom:0 0 0 0;
+    margin-bottom: 221px;
+    letter-spacing: 4px;
   }
 
   nav {
-    width:539px;
-    margin: 221px 0 48px 0;
+    width: 539px;
+    margin: 120px 0 48px 0;
   }
 
-  a {    
+  a {
     height: 15px;
-    width: 15px;    
+    width: 15px;
     margin-right: 40px;
-    
   }
 }
