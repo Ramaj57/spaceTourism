@@ -10,78 +10,58 @@
 }
 
 .nav-title,
-nav a {
+a {
   font-family: "Barlow Condensed", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.name,
 .nav-title,
-nav a.selected {
+a.selected {
   color: var(--white);
 }
 
-.description,
-nav a {
-  color: var(--lightBlue);
+span {
+  color: var(--faintWhite);
+  margin-right: 24px;
 }
 
 .nav-title {
   font-size: 16px;
   line-height: 19.2%;
   letter-spacing: 15%;
-  margin-bottom: 48px;
-  padding: 0 0 0 48px;
+  margin-bottom: 50px;
+  padding: 24px 0 0 0px;
   height: 19px;
 }
 
-nav a {
+a {
+  color: var(--lightBlue);
   font-size: 14px;
   line-height: 16.8%;
   background-color: transparent;
   letter-spacing: 15%;
-  border: none;
+  border-bottom: 3px solid transparent;
   text-decoration: none;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 15px;
   margin: 0 16px;
+  transition: all 500ms ease;
+  padding-bottom: 8px;
 }
 
-nav a.selected {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 15px;
+a:hover {
+  border-bottom: 3px solid var(--faintWhite);
+  color: var(--white);
+}
+
+a.selected {
+  border-bottom: 3px solid var(--white);
 }
 
 nav {
+  position: relative;
+  top: 200px;
   margin-bottom: 24px;
   height: 32px;
-}
-
-.name {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 56px;
-  line-height: 64.2%;
-  margin-bottom: 16px;
-  height: 64px;
-}
-
-.description {
-  font-size: 15px;
-  line-height: 180%;
-  height: 135px;
-}
-
-.distance-label,
-.travel-label {
-  font-size: 14px;
-  line-height: 16.8%;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-  height: 17px;
 }
 
 /* Tablet view*/
@@ -97,18 +77,18 @@ nav {
     height: 24px;
     align-self: flex-start;
   }
+  nav {
+    position: relative;
+    top: 370px;
+    margin-bottom: 24px;
+    height: 32px;
+  }
 
-  nav a {
+  a {
     font-size: 16px;
     line-height: 19.2%;
     letter-spacing: 2px;
     margin: 0 16px;
-  }
-
-  nav a.selected {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 15px;
   }
 
   .name {
@@ -117,25 +97,13 @@ nav {
     height: 92px;
   }
 
-  .description {
-    height: 87px;
-    margin-bottom: 24px;
-    padding: 0 85px;
+  span {
+    margin: 0 24px 0 48px;
   }
 
   .bottom-flex {
     display: flex;
     justify-content: space-between;
-  }
-
-  .travel,
-  .distance {
-    width: 245px;
-  }
-
-  .distance-value,
-  .travel-value {
-    margin: 0;
   }
 }
 /* Desktop view*/
@@ -164,31 +132,13 @@ nav {
     padding: 133px 47px;
   }
 
-  nav a {
+  a {
     margin: 0 32px 0 0;
   }
 
-  nav a.selected {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 15px;
-  }
-
   nav {
+    position: static;
     margin-bottom: 40px;
-  }
-
-  .name {
-    font-size: 96px;
-    line-height: 110%;
-    height: 110px;
-  }
-
-  .description {
-    font-size: 18px;
-    height: 128px;
-    margin-bottom: 40px;
-    padding: 0;
   }
 
   .bottom-flex {
