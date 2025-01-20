@@ -80,8 +80,9 @@
   .name {
     height: 64px;
     font-size: 56px;
-    line-height: 64.2%;
+    line-height: 90.2%;
     width: 600px;
+    margin-bottom:48px;
     
     
   }
@@ -97,7 +98,7 @@
   img {
     bottom: 48px;
     left: 785px;
-    width: 539px;
-    max-height: 676px;
+    width: 568px;
+    max-height: 712px;
   }
 }
