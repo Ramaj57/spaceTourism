@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { spacedata } from '../../../data';
 
@@ -9,7 +9,7 @@ import { spacedata } from '../../../data';
   templateUrl: './equipment.component.html',
   styleUrl: './equipment.component.css',
 })
-export class EquipmentComponent {
+export class EquipmentComponent implements OnInit{
   name = signal('');
   image = signal('');
   description = signal('');
